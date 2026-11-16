@@ -1,0 +1,5 @@
+../Src/my_ism330dhcx.c:6:6:my_ism330_init	16	static
+../Src/my_ism330dhcx.c:19:9:my_ism330_read_reg	24	static
+../Src/my_ism330dhcx.c:28:6:my_ism330_write_reg	24	static
+../Src/my_ism330dhcx.c:35:6:my_ism330_read_multi	16	static
+../Src/my_ism330dhcx.c:40:6:my_ism330_get_accel	32	static
