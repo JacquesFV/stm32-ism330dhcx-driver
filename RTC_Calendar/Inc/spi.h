@@ -1,0 +1,22 @@
+#ifndef SPI_H_
+#define SPI_H_
+
+#include "stm32f4xx.h"
+#include <stdint.h>
+
+#define SPI1EN		(1U<<12)
+#define GPIOAEN		(1U<<0)
+#define SR_TXE		(1U<<1)
+#define SR_RXNE		(1U<<0)
+#define SR_BSY		(1U<<7)
+
+void spi_gpio_init(void);
+void spi1_config(void);
+void spi1_transmit(uint8_t *data, uint32_t size);
+void spi1_receive(uint8_t *data, uint32_t size);
+void cs_enable(void);
+void cs_disable(void);
+
+
+uint8_t spi1_transfer(uint8_t data);
+#endif
